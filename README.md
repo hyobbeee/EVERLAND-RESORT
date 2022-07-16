@@ -4,7 +4,7 @@
 ## 1. Display
 ![캐리비안_풀캡처](https://user-images.githubusercontent.com/99409757/179337441-6703cca5-5de2-4dd1-9cfa-be01f291fef4.png)
 
-##. 2. Description
+## 2. Description
 포지션을 이용해 요소들을 올바른 위치에 배치하도록 했으며 반응형으로 디자인하는 것을 중점적으로 구현해 보았습니다.
 
 ## 3. Login
