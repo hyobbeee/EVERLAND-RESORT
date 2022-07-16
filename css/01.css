@@ -1,0 +1,650 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh !important;
+}
+
+li,
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.txt-bold {
+  font-weight: 700;
+}
+
+.gnb_area {
+  height: 148px;
+}
+
+.header_top {
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  background-color: #F6F6F6;
+}
+
+.header_top>img {
+  margin-right: 30px;
+}
+
+.header_top>a {
+  border: 0.5px solid #999;
+  text-align: center;
+  width: 120px;
+  line-height: 35px;
+  font-size: 14px;
+  position: relative;
+}
+
+.header_top>a .on {
+  background-color: white;
+  border-bottom: 3px solid white;
+  font-weight: bold;
+  position: absolute;
+  width: 119px;
+  right: 0;
+  top: 1px;
+  z-index: 1000;
+}
+
+.header_top .lang {
+  padding: 3px 7px;
+  text-align: center;
+  width: 165px;
+  line-height: 35px;
+  font-size: 13px;
+  position: relative;
+}
+
+.header_top .lang>img {
+  padding: 5px 7px 0;
+}
+
+.header_top .lang>.lang-list {
+  width: 104px;
+  height: 66px;
+  background-color: white;
+  border: 1.5px solid #999;
+  border-radius: 7px;
+  padding: 3px;
+  font-size: 12px;
+  line-height: 18px;
+  position: absolute;
+  top: 33px;
+  right: 25px;
+  display: none;
+}
+
+.header_top .lang:hover>.lang-list {
+  display: block;
+}
+
+.header_top .reservation {
+  display: flex;
+  text-align: center;
+  font-size: 13px;
+  line-height: 35px;
+}
+
+.header_top .reservation_orange {
+  width: 102px;
+  background-color: #FF7F02;
+  color: white;
+}
+
+.header_top .reservation_mint {
+  width: 102px;
+  background-color: #2DBDCA;
+  color: white;
+}
+
+.header_top .reservation_purple {
+  width: 102px;
+  background-color: #892FD5;
+  color: white;
+}
+
+.header_bottom {
+  height: 65px;
+  display: flex;
+  justify-content: center;
+}
+
+.header_bottom>img {
+  margin: 5px;
+}
+
+.header_bottom .login_area {
+  display: flex;
+  position: absolute;
+  right: 340px;
+  top: 60px;
+  font-size: 11px;
+}
+
+.header_bottom .login_area>li {
+  margin: 0 5px;
+}
+
+.nav {
+  border-top: 2px solid #008DE7;
+  height: 42px;
+  position: relative;
+}
+
+.nav .inner {
+  height: 43px;
+  line-height: 43px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav .depth1 {
+  display: flex;
+  justify-content: center;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.nav .depth1_box li {
+  width: 241px;
+  text-align: center;
+}
+
+.nav .depth1 .depth1_box:hover {
+  background-color: #008DE7;
+}
+
+.nav .depth1 .depth1_box:hover .ss {
+  color: #fff;
+}
+
+.nav .depth1 .depth1_box a:hover {
+  color: #008DE7;
+  text-decoration: underline;
+}
+
+.nav .depth1 .depth2 .aa:hover .depth1_box {
+  background-color: #008DE7;
+}
+
+.nav .depth1:hover .depth2_boxx {
+  display: flex;
+  justify-content: center;
+}
+
+.nav .depth2_box {
+  width: 100%;
+  height: 230px;
+  position: absolute;
+  top: 43px;
+  right: 0px;
+  display: none;
+  z-index: 1000;
+  background-color: white;
+}
+
+.nav .depth2_box .depth2_col {
+  border-left: 1px solid #e0e0e0;
+}
+
+.nav .depth2_box .depth2_col:last-child {
+  border-right: 1px solid #e0e0e0;
+}
+
+.nav .depth2_box .depth2 {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  font-size: 14px;
+  line-height: 33px;
+}
+
+main .wrap {
+  background-color: #F6F6F6;
+}
+
+main .wrap .img_back {
+  background: url(../img/마르카리베\ 더베이사이드\ 카페\ 오픈\ 이미지.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+  max-height: 570px;
+}
+
+main .wrap img {
+  width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
+
+main .wrap .ticket_top {
+  margin-top: 50px;
+}
+
+main .wrap .ticket_top h3 {
+  font-family: Montserrat;
+  font-size: 38px;
+  display: block;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 7px;
+}
+
+main .wrap .ticket_top a {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+main .wrap .ticket_box {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 230px;
+  width: 1000px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  position: relative;
+}
+
+main .wrap .ticket_box .dc_info {
+  border-right: 1px solid #dadada;
+  width: 200px;
+  margin: 15px 0;
+}
+
+main .wrap .ticket_box .dc_info:last-child {
+  border-right: none;
+}
+
+main .wrap .ticket_box .dc_info img {
+  width: 62px;
+  margin: 15px auto;
+}
+
+main .wrap .ticket_box .dc_info h5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+main .wrap .ticket_box .dc_info a {
+  font-size: 14px;
+  display: block;
+  margin: 5px auto;
+}
+
+main .wrap .ticket_bottom {
+  padding-bottom: 40px;
+}
+
+main .wrap .ticket_bottom_box {
+  width: 250px;
+  height: 45px;
+  margin: 20px auto;
+  padding: 0 23px;
+  border: 1px solid #008DE7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+main .wrap .ticket_bottom img {
+  height: 10px;
+  width: 20px;
+  padding: 0;
+}
+
+main .wrap .ticket_aside {
+  position: absolute;
+  bottom: -650px;
+  right: 50%;
+  margin-right: -650px;
+}
+
+main .wrap .ticket_aside_box {
+  background-color: #EBEDF5;
+  width: 95px;
+  height: 95px;
+  margin: 10px auto;
+  border-radius: 50%;
+  font-size: 14px;
+  padding: 30px 13px;
+  text-align: center;
+  font-weight: 500;
+}
+
+main .wrap .ticket_aside_box:first-child {
+  background-color: #1C54F8;
+}
+
+main .wrap .ticket_aside_box:first-child a {
+  color: #fff;
+}
+
+main .wrap .ticket_aside_box:last-child {
+  padding: 24px 13px;
+}
+
+main .wrap .ticket_aside_box a {
+  color: #333;
+}
+
+main .info_top {
+  margin-top: 40px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+main h3 {
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 900;
+  margin-bottom: 7px;
+}
+
+main .info_top>a {
+  color: #666;
+  font-family: "Noto Sans KR", Montserrat, "Malgun Gothic", Dotum, sans-serif;
+}
+
+main .info_mid {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+main .info_mid .info_box {
+  width: 325px;
+  border: 1px solid #999;
+  margin: 0 5px;
+}
+
+main .info_mid .info_box .info_box_top {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 2px solid #2159FA;
+}
+
+main .info_mid .info_box .info_box_top h4 {
+  font-family: Montserrat;
+  font-size: 25px;
+}
+
+main .info_mid .info_box .info_box_top a {
+  color: #666;
+  font-family: "Noto Sans KR", Montserrat, "Malgun Gothic", Dotum, sans-serif;
+}
+
+main .info_mid .info_box .info_box_mid>ul {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  margin: 0 20px;
+}
+
+main .info_mid .info_box .info_box_mid li {
+  display: block;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  line-height: 45px;
+  font-size: 14px;
+  margin-left: 10px;
+  position: relative;
+  color: #333;
+}
+
+main .info_mid .info_box .info_box_mid li::before {
+  display: block;
+  content: "";
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 20px;
+  left: -10px;
+}
+
+main .info_mid .info_box .info_box_bottom {
+  background: url(../img/캐비\ 물은\ 얼마나\ 깨끗할까_\ 수질\ 현황\ 확인하기.jpg) no-repeat center/cover;
+  margin-top: 30px;
+}
+
+main .info_mid .info_box .info_box_time strong {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+main .info_mid .info_box .info_box_time .info_box_time_inout {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+main .info_box_time_inout_in {
+  line-height: 45px;
+  margin-right: 10px;
+}
+
+main .info_mid .info_box .info_box_time .info_box_time_inout h5 {
+  font-family: Montserrat;
+  font-size: 31px;
+  line-height: 45px;
+  color: #2159FA;
+}
+
+main .txtbox {
+  text-align: center;
+  margin-top: 10px;
+  line-height: 22px;
+  font-size: 15px;
+}
+
+main .txtbox .txtbox_color {
+  color: #2159FA;
+  margin-bottom: 10px;
+}
+
+main .info_box_btn {
+  width: 186px;
+  margin: 20px auto;
+  border: 1.5px solid #2159FA;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 15px;
+}
+
+main .info_box_btn>a {
+  color: #2159FA;
+}
+
+main .info_box_blue {
+  text-align: center;
+  padding: 29px 0;
+  height: 129px;
+  background-color: #2159FA;
+  position: relative;
+}
+
+main .info_box_blue h4 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 25px;
+  line-height: 45px;
+}
+
+main .info_box_blue>a {
+  color: #fff;
+}
+
+main .info_box_blue a::after {
+  content: "";
+  display: block;
+  background: url(../img/bg_smart_reservation_ico.png) no-repeat center/cover;
+  width: 109px;
+  height: 140px;
+  position: absolute;
+  top: -12px;
+  right: -15px;
+}
+
+main .info_box_grid {
+  width: 325px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+main .info_box_grid a:last-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+main .info_box_grid>a {
+  border-bottom: 1px solid #e0e0e0;
+  height: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+main .info_box_grid>a:last-child {
+  justify-content: flex-start;
+  margin-left: 30px;
+  border: none;
+  position: relative;
+}
+
+main .info_box_grid>a:nth-child(2n):after {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 82px;
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main .info_box_bus {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e0e0e0;
+}
+
+main .info_box_bus_R>a {
+  font-size: 15px;
+}
+
+main .info_box_bus_R a>h2 {
+  color: #6d2cb7;
+  font-size: 17px;
+  line-height: 35px;
+}
+
+main .info_bottom {
+  margin: 50px auto;
+  text-align: center;
+}
+
+main .info_bottom_mid>ul {
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+  margin: 25px auto;
+}
+
+main .info_bottom_mid>ul>li {
+  display: flex;
+  width: 180px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .info_bottom_mid>ul>li img {
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+main .info_bottom_mid>ul>li a {
+  font-size: 17px;
+  text-align: center;
+}
+
+main .info_tip {
+  width: 210px;
+  height: 45px;
+  margin: 50px auto;
+  padding: 0 23px;
+  border: 1px solid #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+main .info_tip p {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.footer_top {
+  display: flex;
+  justify-content: center;
+  background-color: #E9E9E9;
+  width: 100%;
+  height: 45px;
+}
+
+.footer_top ul {
+  display: flex;
+  width: 960px;
+}
+
+.footer_top div {
+  margin: auto 120px;
+}
+
+.footer_bottom {
+  height: 140px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #434B55;
+}
+
+.footer_bottom img {
+  margin: 10px 0;
+}
+
+/*# sourceMappingURL=01.css.map */
